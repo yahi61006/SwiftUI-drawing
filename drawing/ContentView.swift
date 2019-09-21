@@ -135,7 +135,7 @@ struct ContentView: View {
                 path.addQuadCurve(to: CGPoint(x: 190, y: 288), control: CGPoint(x: 207, y: 316))
             }
             .fill(Color(red: 170/255, green: 103/255, blue: 77/255))
-            //頭帶
+            //頭帶e
             Path { (path) in
                 path.move(to: CGPoint(x: 92, y: 134))
                 path.addQuadCurve(to: CGPoint(x: 119, y: 110), control: CGPoint(x: 100, y: 114))
