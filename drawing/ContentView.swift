@@ -148,7 +148,7 @@ struct ContentView: View {
             .resizable()
             .scaledToFill()
             .clipped())
-            .edgesIgnoringSafeArea([.top])
+            .edgesIgnoringSafeArea([.top, .bottom])
     }
 }
 
