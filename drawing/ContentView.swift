@@ -14,10 +14,10 @@ struct ContentView: View {
             Group{
                 //頭
                 Path(ellipseIn: CGRect(x: 81, y: 71, width: 240, height: 219))
-                .fill(Color(red: 170/255, green: 103/255, blue: 77/255))
+                    .fill(Color(red: 170/255, green: 103/255, blue: 77/255))
                 //皮膚色部分
                 Path(ellipseIn: CGRect(x: 176, y: 180, width: 54, height: 65))
-                .fill(Color(red: 254/255, green: 213/255, blue: 180/255))
+                    .fill(Color(red: 254/255, green: 213/255, blue: 180/255))
                 //眼
                 Path(ellipseIn: CGRect(x: 172, y: 158, width: 20, height: 20))
                 Path(ellipseIn: CGRect(x: 212, y: 158, width: 20, height: 20))
@@ -109,25 +109,25 @@ struct ContentView: View {
             Group{
                 //鞋
                 Path(ellipseIn: CGRect(x: 120, y: 340, width: 92, height: 106))
-                .fill(Color(red: 81/255, green: 163/255, blue: 221/255))
+                    .fill(Color(red: 81/255, green: 163/255, blue: 221/255))
                 Path(ellipseIn: CGRect(x: 206, y: 340, width: 92, height: 106))
-                .fill(Color(red: 81/255, green: 163/255, blue: 221/255))
+                    .fill(Color(red: 81/255, green: 163/255, blue: 221/255))
                 Path(ellipseIn: CGRect(x: 135, y: 364, width: 60, height: 70))
-                .fill(Color.white)
+                    .fill(Color.white)
                 Path(ellipseIn: CGRect(x: 225, y: 364, width: 60, height: 70))
-                .fill(Color.white)
+                    .fill(Color.white)
                 Path(CGRect(x: 146, y: 388, width: 36, height: 3))
-                .fill(Color.gray)
+                    .fill(Color.gray)
                 Path(CGRect(x: 146, y: 400, width: 36, height: 3))
-                .fill(Color.gray)
+                    .fill(Color.gray)
                 Path(CGRect(x: 146, y: 412, width: 36, height: 3))
-                .fill(Color.gray)
+                    .fill(Color.gray)
                 Path(CGRect(x: 238, y: 388, width: 36, height: 3))
-                .fill(Color.gray)
+                    .fill(Color.gray)
                 Path(CGRect(x: 238, y: 400, width: 36, height: 3))
-                .fill(Color.gray)
+                    .fill(Color.gray)
                 Path(CGRect(x: 238, y: 412, width: 36, height: 3))
-                .fill(Color.gray)
+                    .fill(Color.gray)
             }
             //脖子
             Path { (path) in
@@ -144,7 +144,11 @@ struct ContentView: View {
                 path.closeSubpath()
             }
             .fill(Color.red)
-        }
+        }.background(Image("images")
+            .resizable()
+            .scaledToFill()
+            .clipped())
+            .edgesIgnoringSafeArea([.top])
     }
 }
 
